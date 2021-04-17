@@ -85,6 +85,7 @@
     "finalhandler": "^1.1.0",
     "find-up": "^4.1.0",
     "follow-redirects": "^1.13.3",
+    "font-awesome": "^4.7.0",
     "fresh": "^0.5.2",
     "fs-extra": "^3.0.1",
     "fsevents": "^2.3.2",
