@@ -5,6 +5,17 @@
   margin: 0;
 }
 
+nav {
+  overflow: auto;
+}
+
+#background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+  } 
 
 footer {
   background-image: linear-gradient(#3046C5, #148865, white);
