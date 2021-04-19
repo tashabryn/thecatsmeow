@@ -8,15 +8,30 @@
 nav {
   overflow: auto;
   margin: auto;
+  position: fixed;
+  top: 0px;
 }
 
-#background {
+li:hover { 
+  background-color: #26c583;
+}
+
+#backgroundimg {
   background-size: cover;
-  background-repeat: no-repeat;
   height: 800px;
   position: relative;
   overflow: hidden;
-  } 
+} 
+
+#bgimgcontent {
+  position: absolute; /* Position the background text */
+  top: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  height: 800px; /* Full width */
+  padding: 20px; /* Some padding */
+}
 
 footer {
   background-image: linear-gradient(#26c583, #148865);
