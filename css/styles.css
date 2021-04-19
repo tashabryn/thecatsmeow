@@ -1,23 +1,24 @@
 .jumbotron {
   padding: 10px;
-  background-image: linear-gradient(to right, #3046C5, #148865);
+  background-image: linear-gradient(to right, #26c583, #148865);
   color: white;
   margin: 0;
 }
 
 nav {
   overflow: auto;
+  margin: auto;
 }
 
 #background {
   background-size: cover;
   background-repeat: no-repeat;
-  height: 600px;
+  height: 800px;
   position: relative;
   overflow: hidden;
   } 
 
 footer {
-  background-image: linear-gradient(#3046C5, #148865, white);
+  background-image: linear-gradient(#26c583, #148865);
   padding: 20px 0;
 }
