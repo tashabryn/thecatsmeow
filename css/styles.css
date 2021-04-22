@@ -20,7 +20,6 @@ li:hover {
   font-size: 40px;
 }
 
-
 h2 span {
   font-family: 'Cantarell', sans-serif;
   font-size: 60px;
@@ -34,7 +33,7 @@ h2 span {
   padding: 50px; /* Some padding */
 }
 
-.reserveButton {
+.btn {
   background-color: #26c583;
   border: none;
   color: white;
@@ -46,7 +45,7 @@ h2 span {
 }
 
 #reserveVisit .modal-header {
-  background-color: #148865;
+  background-color: #26c583;
   color: white; 
 }
 
