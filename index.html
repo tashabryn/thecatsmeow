@@ -38,65 +38,177 @@
     </div>
 </header>
 
-
-
-<div class="container">
-    <div class="row">
-        <div class="col">    
-            <div class="navbar-brand" href="index.html"><img src="images/pawprint.png" alt="cat paw" width="75" height="75"></div>
-        </div>
-        <nav class="navbar navbar-brand navbar-expand-md navbar-light">
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#catNavbar"></button>                     
-            <div class="collapse navbar-collapse" id="catNavbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Meet the Kitties</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Events</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Donate</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Meowchandise</a></li> 
-                    <li class="nav-item"><a class="nav-link" href="#">Volunteer</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Kitty Cam</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
-                </ul>
+    <div class="container">
+        <div class="row">
+            <div class="col">    
+                <div class="navbar-brand" id="text" href="index.html"><img src="images/pawprint.png" alt="cat paw" width="75" height="75"> The Cat's Meow</div>
             </div>
-        </nav>
+            <nav class="navbar navbar-brand navbar-expand-md navbar-light">
+                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#catNavbar"></button>                     
+                <div class="collapse navbar-collapse" id="catNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#meetkitties">Meet the Kitties</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Events</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Donate</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Meowchandise</a></li> 
+                        <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </div>
-</div>
 
         <div class="image">
             <div id="backgroundimg" style="background-image: url('images/catbackground.jpg');" alt="cat"></div>
-                <h2><span>The Cat's Meow</span></h2>
+                <h2><span>We're dedicated<br>to saving homeless<br>cats and kittens<br>and placing them<br>in loving furever<br>homes.<br><br>
+                <a role="button" class="btn" id="reserveButton">Reserve Your Visit</a>
+                </span></h2>
+            </div>
+        </div>
+
+        <div id="reserveVisit" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Reserve Your Visit</h3>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <form>
+                                <div class="row form-group">
+                                    <label for="name" class="col-sm-6 col-form-label">Full Name</label>
+                                    <div class="col-sm-6">
+                                        <input class="form-control" type="text" id="name" name="name" placeholder="Enter Full Name">
+                                    </div>
+                                </div>
+
+                                <div class="row form-group">
+                                    <label for="email" class="col-sm-6 col-form-label">Email Address</label>
+                                    <div class="col-sm-6">
+                                        <input class="form-control" type="email" id="email" name="email" placeholder="Enter Email">
+                                    </div>
+                                </div>
+
+                                <div class="row form-group">
+                                    <label class="col-sm-6 col-form-label">Number of Guests</label>
+                                    <div class="col">
+                                        <select name="numGuests" id="numGuests" class="form-control">
+                                            <option>Select...</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="row form-group">
+                                    <label for="date" class="col-sm-6 col-form-label">Schedule Date</label>
+                                    <div class="col-sm-6">
+                                        <input class="form-control" type="date" id="date" name="date" placeholder="mm/dd/yyyy">
+                                    </div>
+                                </div>
+
+                                <div class="row form-group">
+                                    <label class="col-sm-6 col-form-label">Schedule Time</label>
+                                    <div class="col">
+                                        <select name="timeOfVisit" id="timeOfVisit" class="form-control">
+                                            <option>Select...</option>
+                                            <option value="10:00AM">10:00AM</option>
+                                            <option value="11:00AM">11:00AM</option>
+                                            <option value="12:00PM">12:00PM</option>
+                                            <option value="1:00PM">1:00PM</option>
+                                            <option value="2:00PM">2:00PM</option>
+                                            <option value="3:00PM">3:00PM</option>
+                                            <option value="4:00PM">4:00PM</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="row form-group">
+                                    <div class="col">
+                                        <button type="submit" class="btn bg-secondary text-white" data-dismiss="modal">Cancel</button>
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         
     <div class="container">
         <div class="row">
             <div class="col">
-                <h2 class="text-center">Meet The Kitties!</h2>
+                <br><br>
+                <h2 class="text-center" id="text"><a id="meetkitties">Meet The Kitties!</a></h2>
+                <br><br>
                 <div class="card-group">
                     <div class="card" style="width: 18rem;">
                         <img src="images/cat1.jpg" class="card-img-top" alt="picture of cat">
                         <div class="card-body">
-                        <h5 class="card-title">Chester</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Adopt Chester</a>
+                        <h5 class="card-title">Cashew</h5>
+                        <p class="card-text">Lovely Cashew is beautiful inside and out! Cashew is quite sweet and affectionate, so much 
+                            so that she'll head butt your hands to encourage you to pet her silky fur. And if you're looking for an expert 
+                            biscuit maker, look no further! Cashew loves to be near people, though she does not often choose to sit on laps. 
+                            She also enjoys playing with toys, and she appreciates having many scratching posts to keep up with her manicure!</p>
                         </div>
                     </div>
                     <div class="card" style="width: 18rem;">
-                        <img src="images/cat1.jpg" class="card-img-top" alt="picture of cat">
+                        <img src="images/cat2.jpg" class="card-img-top" alt="picture of cat">
                         <div class="card-body">
-                        <h5 class="card-title">Kit Kat</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Adopt Kit Kat</a>
+                        <h5 class="card-title">Sundae</h5>
+                        <p class="card-text">Sundae is a sweet independent cat who likes to get cheek rubs and pets, but most definitely on 
+                            her terms. She and her feline roommates recently had their lives turned upside down when their owner fell ill 
+                            and could no longer care for them. However, you need only to sit with her for a bit to see her sweet nature. 
+                            Sundae loves to chase wand toys and is very fast.</p>
                         </div>
                     </div>
                     <div class="card" style="width: 18rem;">
-                        <img src="images/cat1.jpg" class="card-img-top" alt="picture of cat">
+                        <img src="images/cat3.jpg" class="card-img-top" alt="picture of cat">
                         <div class="card-body">
-                        <h5 class="card-title">Saki</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Adopt Saki</a>
+                        <h5 class="card-title">Cooper</h5>
+                        <p class="card-text">Cooper is very friendly and one of his favorite hobbies might be following you around the house. 
+                            He is very mellow and prefers to be in your company, purring and getting snuggles and nudges, rather than running 
+                            around for long active play sessions. During the day, he lounges by sunny windows to bask in the light and watch 
+                            birds fly by. He's not very vocal, though he will sometimes meow to get attention or treats, as he is quite food 
+                            motivated.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-group">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/cat4.jpg" class="card-img-top" alt="picture of cat">
+                        <div class="card-body">
+                        <h5 class="card-title">Rose</h5>
+                        <p class="card-text">Once Rose has had ample to get to know you, she enjoys your company and frequently follows her 
+                            person around. Rose is easily startled by sudden movement. She needs a quiet home with no small children to help 
+                            her feel relaxed and secure. She is a very curious and bright hunter who will chase a wand toy for quite a while 
+                            but also happy to amuse herself with toy mice and balls.</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/cat5.jpg" class="card-img-top" alt="picture of cat">
+                        <div class="card-body">
+                        <h5 class="card-title">Daisy</h5>
+                        <p class="card-text">Daisy is a gorgeous girl with a more than beautiful heart. Beyond being a stunner she is sweet 
+                            and interested in people. If you want a gentle companion who will stay near you once she acclimates, this is the 
+                            cat for you. Iris struggles a bit with change and needs plenty of time to acclimate to a new space.</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/cat6.jpg" class="card-img-top" alt="picture of cat">
+                        <div class="card-body">
+                        <h5 class="card-title">Max</h5>
+                        <p class="card-text">Max is king of cuddles and loves his treats. In the daytime he prefers napping but if you entice 
+                            him, he will play for you. When he is excited and happy, he will move his tail and roll his body to show you his 
+                            belly and purring out loud. His hidden talent is catching toys!</p>
                         </div>
                     </div>
                 </div>                              
@@ -113,12 +225,10 @@
                     <ul class="list-unstyled">
                         <li><a href="index.html" class="text-white">Home</a></li>
                         <li><a href="#" class="text-white">About Us</a></li>
-                        <li><a href="#" class="text-white">Meet the Kitties</a></li>
+                        <li><a href="#meetkitties" class="text-white">Meet the Kitties</a></li>
                         <li><a href="#" class="text-white">Events</a></li>
                         <li><a href="#" class="text-white">Donate</a></li>
                         <li><a href="#" class="text-white">Meowchandise</a></li>
-                        <li><a href="#" class="text-white">Volunteer</a></li>
-                        <li><a href="#" class="text-white">Kitty Cam</a></li>
                         <li><a href="#" class="text-white">FAQ</a></li>
                     </ul>
                 </div>
@@ -133,10 +243,15 @@
                     <div>
                         <i class="fa fa-paper-plane fa-lg"></i> youremail@thecatsmeow.com</a>
                     </div>
-                    <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
                 </div>
             </div>
         </div>
+
+        <div class="row mt-5">
+            <div class="col-md-12 text-center">
+            <p class="copyright">
+                This template is made with <i class="fa fa-heart" aria-hidden="true"></i> with the help from: <br> Icons made by Freepik from www.flaticon.com <br> Photos courtesy of Christine Knappe, Jae Park, Kari Shea, Lina Angelov, and James Sutton at www.unsplash.com</a></div>
+
     </footer>
 
         <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
