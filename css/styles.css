@@ -3,6 +3,7 @@
   background-image: linear-gradient(to right, #26c583, #148865);
   color: white;
   margin: 0;
+  position: relative;
 }
 
 nav {
@@ -62,7 +63,16 @@ h2 span {
   object-fit: cover;
 }
 
+#round {
+  position: relative;
+  width: 300px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
 footer {
   background-image: linear-gradient(#26c583, #148865);
-  padding: 20px 0;
+  padding: 20px;
 }
